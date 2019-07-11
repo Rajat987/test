@@ -125,6 +125,7 @@
 					<password>${password}</password>
 					<environment>${environment}</environment>
 					<target>server</target>
+					<businessGroup>adt</businessGroup>
 					<region>${region}</region>
 					<targetType>server</targetType>
 					<redeploy>true</redeploy>

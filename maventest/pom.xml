@@ -16,6 +16,46 @@
 		<mule.version>3.8.1</mule.version>
 		<mule.tools.version>1.7</mule.tools.version>
 	</properties>
+	
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>env</name>
+					<value>dev</value>
+				</property>
+			</activation>
+			<properties>
+				<env>dev</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>qa</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>qa</value>
+				</property>
+			</activation>
+			<properties>
+				<env>qa</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>prod</value>
+				</property>
+			</activation>
+			<properties>
+				<env>prod</env>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>

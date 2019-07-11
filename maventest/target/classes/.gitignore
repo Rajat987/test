@@ -1,0 +1,6 @@
+/app-dev.properties
+/app-qa.properties
+/log4j2.xml
+/maventest.xml
+/mule-app.properties
+/mule-deploy.properties
